@@ -1,0 +1,19 @@
+Liste = [5, 30, 55, 2, 22, 1]
+inList = False
+
+Datenobjekt = int(input("\nGeben Sie die Zahl zum Suchen an: "))
+
+for number in Liste:
+    # Für jede Zahl in Liste schauen ob gesuchte dabei ist
+    if number in Liste:
+      inList = True
+      index = Liste.index(Datenobjekt)
+      number - 1
+      # Wenn Zahl in Liste ist, gib Zahl aus
+      if inList == True:
+        index += 1
+        print("Die gesuchte Zahl ist in der Liste und steht an Stelle " + str(index) + ".")
+        break;
+    # Sag bescheid wenn Zahl nicht in Liste ist
+    else:
+        raise ValueError('Zahl nicht in der Liste')
